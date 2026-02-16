@@ -1,0 +1,579 @@
+*{
+    box-sizing: border-box;
+    margin:0px;
+    padding:0px;
+
+}
+@font-face {
+    font-family: 'Montserrat';
+    src: url('Montserrat/Montserrat-VariableFont_wght.ttf');
+}
+.availability{
+    padding-left: 60px;
+    padding-top: 60px;
+}
+.simbols{
+    padding-bottom: 25px;
+}
+.title2{
+    text-align: center;
+    padding-top: 15px;
+}
+html{
+    scroll-behavior: smooth;
+    font-family: 'Montserrat';
+    background-color: lightgrey;
+}
+.container{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    
+}
+.container>*{
+    margin:1%
+}
+nav{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    background-color: black;
+}
+
+nav a{
+    display: flex;
+    text-decoration: none;
+    padding: 15px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    text-transform: uppercase;
+}
+nav a:hover{
+    color: #9ABFCF;
+
+}
+nav a.active{
+    color:#546E7E
+}
+footer{
+    background-color: #546E7E;
+    color: white;
+    text-align: center;
+    height: 40px;
+    padding: 40px;
+    margin-top: 50px;
+}
+header{
+    overflow-x: hidden;
+    display: flex;
+    flex-direction: column;
+   background-image: url(kepek/background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover; 
+  /*  background-attachment: fixed;*/
+   /* background-color: #000000;*/
+   min-height: 400px;
+
+    width:auto;
+    justify-content: space-between;
+}
+.white{
+    color:white;
+    height:fit-content;
+    width:450px;
+    font-size: 25px;
+    height: 110px;
+    text-align: center;
+   /* margin: 20px;*/
+    padding-left: 25px;
+}
+
+.home{
+    overflow-x: hidden;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    justify-content: space-between;
+}
+.szalm{
+    display: flex;
+    overflow-x: hidden;
+
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    max-width: 600px;
+   
+
+}
+.szalm h1{
+    color:antiquewhite;
+    font-size: 35px;
+    text-transform: uppercase;
+    font-weight: 250;
+    margin-top: 40px;
+    margin-bottom: 80px;
+    text-align: center;
+    opacity: 0; 
+   transform: translateX(0);
+    animation: fadeIn 2.5s ease-out forwards;
+}
+
+.flow-text{
+    opacity: 0; 
+    transform: translateX(0);
+    animation: fadeIn 2.5s ease-out forwards; 
+    font-weight: 500;
+   
+}
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateX(20px); 
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0); 
+    }
+}
+.home figure{   
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.home img{ 
+    width: auto; 
+    max-width: 300px; 
+    height: auto;  
+    display: block;
+    margin-bottom: 25px;
+
+}
+
+.left{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: url(kepek/maybephone.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position:  center;
+    margin:0;
+   min-height: 1500px;
+  /* width: auto;
+    max-width: 600px;*/
+    width:100%;
+    max-width: 100vw;;
+    }
+
+.left h2{
+    margin-bottom: 40px;
+}
+.stab{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+    
+    max-width: 600px;
+    width:100%;
+    max-width:100vw;
+}
+.text2{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+   /* margin: 10px;*/
+    font-size: 20px;
+    letter-spacing: 1px;
+    line-height: 1.5;
+    color:black;
+
+    width: 100%;
+    
+    box-sizing: border-box;
+    
+
+}
+.text2 p{
+    padding: 15px;
+}
+.text2 h2{
+    margin-top: 15px;
+    margin-bottom: 20px;
+    padding: 15px;
+    word-wrap:break-word;
+    max-width: 100%;
+    box-sizing: border-box;
+}
+.left img{
+    width: 400px;
+    border-radius: 20px;
+}
+.left p{
+    padding: 25px;
+}
+.text{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    /*padding: 5vw 0;*/
+    /*margin:15px;*/
+    font-size: 20px;
+    letter-spacing: 1px;
+    line-height: 1.5;
+    color: whitesmoke;
+    max-width: 600px;
+
+  /*  padding: 50px;*/
+   /* font-style: italic;*/
+}
+.text a{
+    background-color: #546E7E;
+    box-shadow: 0px 5px 15px rgb(38, 38, 38);
+    text-decoration: none;
+    color: white;
+    padding: 10px;
+    border-radius: 10px;
+    margin: 50px 100px 0 100px;
+}
+.text a:hover{
+    background-color: rgb(29, 55, 100);  
+}
+
+.text img{
+    height: 20px;
+}
+.kiemel{
+    font-weight: bold;
+    margin-bottom: 25px;
+}
+.mernoki{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    background-image:linear-gradient(-174deg, rgb(29,55,100) 88%, lightgrey 90%);
+    margin: 0 0 100px 0;
+    color: aliceblue;
+    padding: 50px;
+    line-height: 1.8;
+    min-height: 450px;
+    font-size: 18px;
+
+}
+
+.mernoki img{
+    height: auto;
+    width: 50vw;
+    border-radius: 10px;
+}
+
+.mernoki p {
+    padding: 15px;
+}
+
+.box{
+    margin: 15px;
+    padding: 20px;
+    box-shadow: 0px 5px 15px rgb(38, 38, 38);
+    text-align: center;
+    background-color: white;
+    width: 100%;
+
+}
+.box h2{
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+.box p{
+    font-size: 18px;
+}
+
+
+
+@keyframes animate{
+    0%{
+        transform: translateY(0);
+    }
+    50%{
+        transform: translateY(-15px);
+    }
+    100%{
+        transform: translateY(0);
+    }
+}
+
+.box figure img{
+    width: 80px;
+    animation: animate 4s infinite ease-in-out;
+}
+
+
+/*kapcsolat*/
+
+form textarea
+{ 
+    resize: vertical; 
+    font-size: 16px;
+    width: 100%;
+}
+
+
+/*fogaskerekek*/
+.gears{
+    display: flex;
+    justify-content: center;
+}
+.gear1{
+    animation:rotate-left 1s linear infinite;
+    transform-origin: 50% 50%;
+    transform-box: fill-box;
+}
+@keyframes rotate-left{
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform:rotate(90deg) ;
+    }
+}
+.gear2{
+    animation:rotate-right 1s linear infinite;
+    transform-origin: 50% 50%;
+    transform-box: fill-box;
+}
+@keyframes rotate-right{
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform:rotate(-81deg) ;
+    }
+}
+section img{
+    align-items: center;
+}
+/*urlappppp*/
+.wrapper
+{
+  /*height: auto;*/
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    margin: 0px;
+    margin: 50px 0;
+    width:700px;
+    background-image: url(kepek/background.jpg) ;
+    color:white;
+    padding: 40px 35px 55px ;
+}
+.wrapper .input-box{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.input-box .input-field{
+    position: relative;
+    z-index: 1;
+    height: 50px;
+    width:100%;
+    margin: 10px 0;
+}
+.input-box .input-field input{
+    width: 100%;
+    height: 100%;
+    border: 2px solid black;
+    outline: none;
+    font-size: 18px;
+    font-weight: 400;
+    color: white;
+    border-radius: 6px;
+    padding: 15px;
+    background: rgba(255,255,255, 0.3);
+
+}
+.input-box .input-field input::placeholder{
+    color: grey;
+} 
+.wrapper .btn{
+    width: 100%;
+    height: 45px;
+    background-color: #9ABFCF;
+    border:none;
+    outline: none;
+    cursor: pointer;
+    font-size:16px;
+    font-weight: 600;
+    color: azure;
+    border-radius: 10px;
+    transition: 0.3s;
+    margin:15px;
+}
+form button[type="submit"]{
+    margin-top: 40px;
+}
+
+.wrapper .btn:hover{
+    color: white;
+    background-color: transparent;
+    border: 2px solid white;
+}
+form{
+    padding: 40px;
+}
+form h1{
+    font-weight: normal;
+    font-size: 28px;
+    margin-bottom: 50px;
+}
+form label{
+    text-transform: uppercase;
+    font-size: 14px;
+    letter-spacing: 2px;
+    padding: 10px;
+    line-height: 20px;
+    margin:10px;
+}
+@media all and (min-width:600px){  
+    .szalm h1{
+        font-size: 45px;
+        text-align: center;
+    }
+    .white{
+        font-size: 30px;
+    }
+    .home img{
+        width:384px
+    }
+
+    .szalm{
+    margin-left: 60px;
+
+    }
+    nav{
+        flex-direction: row;
+        align-items: right;
+        justify-content: flex-end;
+        position: sticky; 
+        top:0;
+       /* overflow: hidden;*/
+        z-index: 1000;
+    }
+    
+    .gears{
+        justify-content: center;
+    }
+   
+    .wrapper{
+        min-width: 700px;
+    }
+    .availability{
+    
+        flex: 1 1 30%;
+        
+    }
+    .box{
+        flex: 1 1 45%;
+    }
+    .mernoki
+    {
+    background-image:linear-gradient(-174deg, rgb(29,55,100) 88%, lightgrey 90%);
+    }
+  .left{
+    background-image: url(kepek/maybephone.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position:  right center;
+   /* min-height: 1300px;*/
+    min-width: 600px;
+    max-width: 768px;
+    width: 100%;   
+}
+.stab{
+    width:100%;
+   /* min-width: 600px;*/
+}
+}
+
+
+@media all and (min-width:768px)
+{
+  
+   
+    .home figure{
+        justify-content: center;
+        align-content: center;
+        margin: auto;
+        margin-top: 25px;
+    
+    }
+
+    .home{
+        display: flex;
+        flex-direction: row;
+      /*  justify-content: space-between;*/
+        align-items: center;
+        box-sizing: border-box;
+        flex-wrap: wrap;
+   
+        
+    }
+    .input-box .input-field{
+        width: 48%;
+        margin:13px 0;
+    }
+    .left p{
+        padding: 40px;
+    }
+    .left a{
+        margin: 50px
+    }
+    .left{
+        flex-direction: row;
+
+    
+       background-image: url(kepek/maybe.png);
+        background-size: center;
+        background-repeat: no-repeat;
+       /*background-position: center;*/
+       min-width: 768px;
+       min-height: auto;
+       max-width: 100%;
+      /* max-width: max-content;*/
+        }
+        .stab{
+        
+            flex-direction: row;
+          /*  margin:auto;*/
+            width:100%;
+        }
+    .text{
+    flex-basis: 70%;
+    }
+    .mernoki{
+        margin-bottom: 50px;
+        display: flex;
+        flex-direction: row;
+        background-image:linear-gradient(-174deg, rgb(29,55,100) 76%, lightgrey 78%);
+    }
+    .mernoki img{
+       
+        width:30vw
+    }
+    .mernoki p{
+        align-items: right;
+    }    
+    aside{
+        flex: 1 1 25%;
+    }
+    article{
+        flex: 1 1 70%
+    }
+    .box{
+        flex: 1 1 20%;
+    }
+}
